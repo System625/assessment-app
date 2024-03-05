@@ -14,10 +14,7 @@ const LoginPage = () => {
 
   const handleLogin = async () => {
     try {
-      const response = await axios.post('https://finx.ginnsltd.com/finx/login/', {
-        email: 'admin@finxapp.net',
-        password: '@greatGOD60'
-      });
+      const response = await axios.post('https://finx.ginnsltd.com/finx/login/', {});
 
       console.log(response.data);
       setLoginSuccess(true);
